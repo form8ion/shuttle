@@ -1,0 +1,6 @@
+_extends: .github
+repository:
+  name: shuttle
+  description: A utility for moving a repository from one account to another
+  homepage: 'https://npm.im/@form8ion/shuttle'
+  private: false
