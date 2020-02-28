@@ -6,6 +6,14 @@ A utility for moving a repository from one account to another
 
 [![Build Status][ci-badge]][ci-link]
 
+## Table of Contents
+
+* [Usage](#usage)
+  * [Installation](#installation)
+* [Contributing](#contributing)
+  * [Dependencies](#dependencies)
+  * [Verification](#verification)
+
 ## Usage
 
 <!-- consumer badges -->
