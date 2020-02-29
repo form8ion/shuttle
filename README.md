@@ -10,6 +10,7 @@ A utility for moving a repository from one account to another
 
 * [Usage](#usage)
   * [Installation](#installation)
+  * [Example](#example)
 * [Contributing](#contributing)
   * [Dependencies](#dependencies)
   * [Verification](#verification)
@@ -26,6 +27,12 @@ A utility for moving a repository from one account to another
 
 ```sh
 $ npm install @form8ion/shuttle --save-prod
+```
+
+### Example
+
+```javascript
+import shuttle from '@form8ion/shuttle';
 ```
 
 ## Contributing
