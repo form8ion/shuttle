@@ -1,3 +1,3 @@
-// remark-usage-ignore-next
-/* eslint-disable-next-line no-unused-vars */
-import shuttle from './src';
+import {shuttle} from './lib/index.cjs';
+
+shuttle();

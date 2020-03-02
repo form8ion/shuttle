@@ -32,7 +32,9 @@ $ npm install @form8ion/shuttle --save-prod
 ### Example
 
 ```javascript
-import shuttle from '@form8ion/shuttle';
+import {shuttle} from '@form8ion/shuttle';
+
+shuttle();
 ```
 
 ## Contributing
