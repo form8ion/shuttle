@@ -11,6 +11,8 @@ A utility for moving a repository from one account to another
 * [Usage](#usage)
   * [Installation](#installation)
   * [Example](#example)
+    * [Import](#import)
+    * [Execute](#execute)
 * [Contributing](#contributing)
   * [Dependencies](#dependencies)
   * [Verification](#verification)
@@ -31,10 +33,21 @@ $ npm install @form8ion/shuttle --save-prod
 
 ### Example
 
+#### Import
+
 ```javascript
 import {shuttle} from '@form8ion/shuttle';
+```
 
-shuttle();
+#### Execute
+
+```javascript
+(async () => {
+  await shuttle();
+```
+
+```javascript
+})();
 ```
 
 ## Contributing
