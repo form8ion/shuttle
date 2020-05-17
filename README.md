@@ -43,7 +43,7 @@ import {shuttle} from '@form8ion/shuttle';
 
 ```javascript
 (async () => {
-  await shuttle({projectRoot: process.cwd()});
+  await shuttle();
 ```
 
 ```javascript

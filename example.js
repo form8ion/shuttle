@@ -9,7 +9,7 @@ stubbedFs();
 // #### Execute
 
 (async () => {
-  await shuttle({projectRoot: process.cwd()});
+  await shuttle();
   // remark-usage-ignore-next
   stubbedFs.restore();
 })();

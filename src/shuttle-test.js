@@ -11,13 +11,16 @@ suite('shuttle', () => {
   setup(() => {
     sandbox = sinon.createSandbox();
 
+    sandbox.stub(process, 'cwd');
     sandbox.stub(documentation, 'default');
   });
 
   teardown(() => sandbox.restore());
 
   test('that the project is shuttled between accounts', async () => {
-    await shuttle({projectRoot});
+    process.cwd.returns(projectRoot);
+
+    await shuttle();
 
     assert.calledWith(documentation.default, {projectRoot});
   });
