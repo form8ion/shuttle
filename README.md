@@ -2,9 +2,11 @@
 
 A utility for moving a repository from one account to another
 
-<!-- status badges -->
+<!--status-badges start -->
 
 [![Build Status][ci-badge]][ci-link]
+
+<!--status-badges end -->
 
 ## Table of Contents
 
@@ -19,11 +21,13 @@ A utility for moving a repository from one account to another
 
 ## Usage
 
-<!-- consumer badges -->
+<!--consumer-badges start -->
 
 [![npm][npm-badge]][npm-link]
 [![Try @form8ion/shuttle on RunKit][runkit-badge]][runkit-link]
 [![MIT license][license-badge]][license-link]
+
+<!--consumer-badges end -->
 
 ### Installation
 
@@ -52,13 +56,15 @@ import {shuttle} from '@form8ion/shuttle';
 
 ## Contributing
 
-<!-- contribution badges -->
+<!--contribution-badges start -->
 
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
 [![Greenkeeper][greenkeeper-badge]][greenkeeper-link]
 [![semantic-release][semantic-release-badge]][semantic-release-link]
 [![PRs Welcome][PRs-badge]][PRs-link]
+
+<!--contribution-badges end -->
 
 ### Dependencies
 
