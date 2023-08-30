@@ -14,7 +14,8 @@
     "lib/"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "repository": "form8ion/shuttle",
   "bugs": "https://github.com/form8ion/shuttle/issues",

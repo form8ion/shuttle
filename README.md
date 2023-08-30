@@ -4,6 +4,8 @@ A utility for moving a repository from one account to another
 
 <!--status-badges start -->
 
+![SLSA Level 2][slsa-badge]
+
 <!--status-badges end -->
 
 ## Table of Contents
@@ -103,8 +105,10 @@ $ npm test
 
 [semantic-release-link]: https://github.com/semantic-release/semantic-release
 
-[semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-release-badge]: https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release
 
 [PRs-link]: http://makeapullrequest.com
 
 [PRs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
+
+[slsa-badge]: https://slsa.dev/images/gh-badge-level2.svg
