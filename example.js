@@ -1,7 +1,7 @@
 // #### Import
 // remark-usage-ignore-next
 import stubbedFs from 'mock-fs';
-import {shuttle} from './lib/index.cjs';
+import {shuttle} from './lib';
 
 // remark-usage-ignore-next
 stubbedFs();
