@@ -3,7 +3,7 @@ import sinon from 'sinon';
 import {assert} from 'chai';
 import any from '@travi/any';
 import * as remark from '../thirdparty-wrappers/remark';
-import {settings} from '../.remarkrc';
+import {settings} from '../.remarkrc.cjs';
 import shuttleDocumentation from './documentation';
 
 suite('documentation', () => {

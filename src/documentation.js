@@ -1,6 +1,6 @@
 import fs from 'fs';
 import {info} from '@travi/cli-messages';
-import * as remarkConfig from '../.remarkrc';
+import * as remarkConfig from '../.remarkrc.cjs';
 import remark from '../thirdparty-wrappers/remark';
 
 export default function ({projectRoot}) {
@@ -14,7 +14,7 @@ export default function ({projectRoot}) {
       .process(fs.readFileSync(pathToReadme, 'utf8'), (err, file) => {
         if (err) reject(err);
         else {
-          fs.writeFileSync(pathToReadme, file);
+          fs.writeFileSync(pathToReadme, `${file}`);
           resolve();
         }
       });
