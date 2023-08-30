@@ -4,6 +4,7 @@ A utility for moving a repository from one account to another
 
 <!--status-badges start -->
 
+[![Codecov][coverage-badge]][coverage-link]
 ![SLSA Level 2][slsa-badge]
 
 <!--status-badges end -->
@@ -110,5 +111,9 @@ $ npm test
 [PRs-link]: http://makeapullrequest.com
 
 [PRs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
+
+[coverage-link]: https://codecov.io/github/form8ion/shuttle
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/form8ion/shuttle?logo=codecov
 
 [slsa-badge]: https://slsa.dev/images/gh-badge-level2.svg
