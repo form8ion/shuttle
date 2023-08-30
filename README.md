@@ -4,8 +4,6 @@ A utility for moving a repository from one account to another
 
 <!--status-badges start -->
 
-[![Build Status][ci-badge]][ci-link]
-
 <!--status-badges end -->
 
 ## Table of Contents
@@ -90,10 +88,6 @@ $ npm test
 [license-link]: LICENSE
 
 [license-badge]: https://img.shields.io/github/license/form8ion/shuttle.svg
-
-[ci-link]: https://travis-ci.com/form8ion/shuttle
-
-[ci-badge]: https://img.shields.io/travis/com/form8ion/shuttle/master.svg
 
 [commit-convention-link]: https://conventionalcommits.org
 
