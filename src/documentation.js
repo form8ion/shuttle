@@ -1,7 +1,8 @@
 import fs from 'fs';
+import remark from 'remark';
 import {info} from '@travi/cli-messages';
+
 import * as remarkConfig from '../.remarkrc.cjs';
-import remark from '../thirdparty-wrappers/remark';
 
 export default function ({projectRoot}) {
   info('Shuttling Documentation');
