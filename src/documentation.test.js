@@ -15,6 +15,7 @@ vi.mock('remark');
 describe('documentation', () => {
   let process;
   const badges = any.simpleObject();
+  const projectName = any.string();
 
   beforeEach(() => {
     const data = vi.fn();
@@ -23,7 +24,7 @@ describe('documentation', () => {
 
     remark.mockReturnValue({data});
     when(data).calledWith('settings', remarkConfig.settings).mockReturnValue({use});
-    when(use).calledWith(headingUpdater, 'baz').mockReturnValue({process});
+    when(use).calledWith(headingUpdater, projectName).mockReturnValue({process});
   });
 
   afterEach(() => {
@@ -38,7 +39,7 @@ describe('documentation', () => {
     when(process).calledWith(existingFileContents).mockResolvedValue(updatedFileContents);
     when(fs.readFile).calledWith(pathToReadmeFile, 'utf8').mockReturnValue(existingFileContents);
 
-    await shuttleDocumentation({projectRoot, results: {badges}});
+    await shuttleDocumentation({projectRoot, projectName, results: {badges}});
 
     expect(fs.writeFile).toHaveBeenCalledWith(pathToReadmeFile, updatedFileContents);
   });
@@ -49,7 +50,7 @@ describe('documentation', () => {
       throw error;
     });
 
-    expect(() => shuttleDocumentation({results: {badges}})).rejects.toThrowError(error);
+    expect(() => shuttleDocumentation({projectName})).rejects.toThrowError(error);
     expect(fs.writeFile).not.toHaveBeenCalled();
   });
 });

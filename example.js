@@ -1,6 +1,7 @@
 // #### Import
-// remark-usage-ignore-next
+// remark-usage-ignore-next 2
 import stubbedFs from 'mock-fs';
+import {questionNames} from '@form8ion/core';
 import {shuttle} from './lib/index.js';
 
 // #### Execute
@@ -9,7 +10,7 @@ import {shuttle} from './lib/index.js';
 (async () => {
   stubbedFs({'README.md': ''});
 
-  await shuttle();
+  await shuttle({decisions: {[questionNames.PROJECT_NAME]: 'new-project-name'}});
   // remark-usage-ignore-next 2
   stubbedFs.restore();
 })();

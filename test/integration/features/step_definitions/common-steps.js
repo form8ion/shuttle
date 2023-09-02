@@ -1,11 +1,13 @@
+import {promises as fs} from 'node:fs';
 // eslint-disable-next-line import/no-extraneous-dependencies,import/no-unresolved
 import {shuttle} from '@form8ion/shuttle';
 
 import {After, Before, When} from '@cucumber/cucumber';
 import stubbedFs from 'mock-fs';
+import {questionNames} from '@form8ion/core';
 
 Before(function () {
-  stubbedFs({'README.md': '# foo'});
+  stubbedFs();
 });
 
 After(function () {
@@ -13,5 +15,7 @@ After(function () {
 });
 
 When('the project is shuttled to a new location', async function () {
-  await shuttle();
+  await fs.writeFile(`${process.cwd()}/README.md`, `# ${this.existingProjectName}`);
+
+  await shuttle({decisions: {[questionNames.PROJECT_NAME]: this.updatedProjectName}});
 });

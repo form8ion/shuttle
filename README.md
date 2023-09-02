@@ -47,7 +47,7 @@ import {shuttle} from '@form8ion/shuttle';
 #### Execute
 
 ```javascript
-  await shuttle();
+  await shuttle({decisions: {[questionNames.PROJECT_NAME]: 'new-project-name'}});
 ```
 
 ## Contributing
