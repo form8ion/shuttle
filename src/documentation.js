@@ -3,6 +3,7 @@ import {remark} from 'remark';
 import {info} from '@travi/cli-messages';
 
 import remarkConfig from '../.remarkrc.js';
+import headingUpdater from './heading-updater.js';
 
 export default async function ({projectRoot}) {
   info('Shuttling Documentation');
@@ -11,6 +12,7 @@ export default async function ({projectRoot}) {
 
   const resultingContent = await remark()
     .data('settings', remarkConfig.settings)
+    .use(headingUpdater, 'baz')
     .process(await fs.readFile(pathToReadme, 'utf8'));
 
   await fs.writeFile(pathToReadme, `${resultingContent}`);

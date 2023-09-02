@@ -5,6 +5,7 @@ import {afterEach, beforeEach, describe, expect, it, vi} from 'vitest';
 import any from '@travi/any';
 import {when} from 'jest-when';
 
+import headingUpdater from './heading-updater.js';
 import remarkConfig from '../.remarkrc.js';
 import shuttleDocumentation from './documentation.js';
 
@@ -17,10 +18,12 @@ describe('documentation', () => {
 
   beforeEach(() => {
     const data = vi.fn();
+    const use = vi.fn();
     process = vi.fn();
 
     remark.mockReturnValue({data});
-    when(data).calledWith('settings', remarkConfig.settings).mockReturnValue({process});
+    when(data).calledWith('settings', remarkConfig.settings).mockReturnValue({use});
+    when(use).calledWith(headingUpdater, 'baz').mockReturnValue({process});
   });
 
   afterEach(() => {

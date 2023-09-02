@@ -5,7 +5,7 @@ import {After, Before, When} from '@cucumber/cucumber';
 import stubbedFs from 'mock-fs';
 
 Before(function () {
-  stubbedFs({'README.md': ''});
+  stubbedFs({'README.md': '# foo'});
 });
 
 After(function () {

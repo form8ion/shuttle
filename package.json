@@ -46,7 +46,8 @@
   },
   "dependencies": {
     "@travi/cli-messages": "^1.0.4",
-    "remark": "^14.0.3"
+    "remark": "^14.0.3",
+    "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
     "@cucumber/cucumber": "9.4.0",
@@ -57,12 +58,14 @@
     "@travi/any": "^2.0.7",
     "ban-sensitive-files": "^1.9.2",
     "c8": "8.0.1",
+    "chai": "4.3.8",
     "cross-env": "7.0.3",
     "cz-conventional-changelog": "^3.1.0",
     "gherkin-lint": "^4.0.1",
     "husky": "^4.2.3",
     "jest-when": "3.6.0",
     "lockfile-lint": "4.12.1",
+    "mdast-util-from-markdown": "2.0.0",
     "mock-fs": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "publint": "0.2.2",
