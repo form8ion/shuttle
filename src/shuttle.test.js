@@ -2,10 +2,10 @@
 import {afterEach, beforeEach, describe, expect, it, vi} from 'vitest';
 import any from '@travi/any';
 
-import shuttleDocumentation from './documentation';
-import shuttle from './shuttle';
+import shuttleDocumentation from './documentation.js';
+import shuttle from './shuttle.js';
 
-vi.mock('./documentation');
+vi.mock('./documentation.js');
 
 describe('shuttle', () => {
   const originalProcessCwd = process.cwd;

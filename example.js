@@ -1,17 +1,13 @@
 // #### Import
-// remark-usage-ignore-next 2
-import fs from 'fs';
+// remark-usage-ignore-next
 import stubbedFs from 'mock-fs';
-import {shuttle} from './lib';
+import {shuttle} from './lib/index.js';
 
 // #### Execute
 
-// remark-usage-ignore-next 6
+// remark-usage-ignore-next 3
 (async () => {
-  stubbedFs({
-    'README.md': '',
-    '.remarkrc.cjs': await fs.readFile('.remarkrc.cjs')
-  });
+  stubbedFs({'README.md': ''});
 
   await shuttle();
   // remark-usage-ignore-next 2

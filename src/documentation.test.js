@@ -1,14 +1,14 @@
-import fs from 'fs';
-import remark from 'remark';
+import fs from 'node:fs';
+import {remark} from 'remark';
 
 import {afterEach, beforeEach, describe, expect, it, vi} from 'vitest';
 import any from '@travi/any';
 import {when} from 'jest-when';
 
-import {settings} from '../.remarkrc.cjs';
-import shuttleDocumentation from './documentation';
+import remarkConfig from '../.remarkrc.js';
+import shuttleDocumentation from './documentation.js';
 
-vi.mock('fs');
+vi.mock('node:fs');
 vi.mock('remark');
 
 describe('documentation', () => {
@@ -20,7 +20,7 @@ describe('documentation', () => {
     process = vi.fn();
 
     remark.mockReturnValue({data});
-    when(data).calledWith('settings', settings).mockReturnValue({process});
+    when(data).calledWith('settings', remarkConfig.settings).mockReturnValue({process});
   });
 
   afterEach(() => {

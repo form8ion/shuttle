@@ -1,1 +1,1 @@
-export {default as shuttle} from './shuttle';
+export {default as shuttle} from './shuttle.js';

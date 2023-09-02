@@ -47,12 +47,7 @@ import {shuttle} from '@form8ion/shuttle';
 #### Execute
 
 ```javascript
-(async () => {
   await shuttle();
-```
-
-```javascript
-})();
 ```
 
 ## Contributing
