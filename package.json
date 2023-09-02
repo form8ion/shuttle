@@ -45,6 +45,8 @@
     "provenance": true
   },
   "dependencies": {
+    "@form8ion/core": "^3.2.1",
+    "@form8ion/overridable-prompts": "^1.2.0",
     "@travi/cli-messages": "^1.0.4",
     "remark": "^14.0.3",
     "unist-util-visit": "^5.0.0"
