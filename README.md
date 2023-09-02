@@ -1,6 +1,6 @@
 # shuttle
 
-A utility for moving a repository from one account to another
+A utility for moving a repository from one account to another :minibus:
 
 <!--status-badges start -->
 
