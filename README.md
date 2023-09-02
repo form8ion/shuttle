@@ -59,6 +59,7 @@ import {shuttle} from '@form8ion/shuttle';
 [![Greenkeeper][greenkeeper-badge]][greenkeeper-link]
 [![semantic-release][semantic-release-badge]][semantic-release-link]
 [![PRs Welcome][PRs-badge]][PRs-link]
+[![Renovate][renovate-badge]][renovate-link]
 
 <!--contribution-badges end -->
 
@@ -112,3 +113,7 @@ $ npm test
 [coverage-badge]: https://img.shields.io/codecov/c/github/form8ion/shuttle?logo=codecov
 
 [slsa-badge]: https://slsa.dev/images/gh-badge-level2.svg
+
+[renovate-link]: https://renovatebot.com
+
+[renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovatebot
