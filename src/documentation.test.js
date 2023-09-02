@@ -1,4 +1,4 @@
-import fs from 'node:fs';
+import {promises as fs} from 'node:fs';
 import {remark} from 'remark';
 
 import {afterEach, beforeEach, describe, expect, it, vi} from 'vitest';
@@ -32,25 +32,21 @@ describe('documentation', () => {
     const pathToReadmeFile = `${projectRoot}/README.md`;
     const existingFileContents = any.string();
     const updatedFileContents = any.string();
-    process.mockImplementation((fileContents, callback) => {
-      if (fileContents === existingFileContents) {
-        callback(null, updatedFileContents);
-      }
-    });
-    when(fs.readFileSync).calledWith(pathToReadmeFile, 'utf8').mockReturnValue(existingFileContents);
+    when(process).calledWith(existingFileContents).mockResolvedValue(updatedFileContents);
+    when(fs.readFile).calledWith(pathToReadmeFile, 'utf8').mockReturnValue(existingFileContents);
 
     await shuttleDocumentation({projectRoot, results: {badges}});
 
-    expect(fs.writeFileSync).toHaveBeenCalledWith(pathToReadmeFile, updatedFileContents);
+    expect(fs.writeFile).toHaveBeenCalledWith(pathToReadmeFile, updatedFileContents);
   });
 
   it('should reject the promise for a processing error', async () => {
     const error = new Error('from test');
-    process.mockImplementation((_, callback) => {
-      callback(error);
+    process.mockImplementation(() => {
+      throw error;
     });
 
     expect(() => shuttleDocumentation({results: {badges}})).rejects.toThrowError(error);
-    expect(fs.writeFileSync).not.toHaveBeenCalled();
+    expect(fs.writeFile).not.toHaveBeenCalled();
   });
 });
