@@ -56,7 +56,6 @@ import {shuttle} from '@form8ion/shuttle';
 
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
-[![Greenkeeper][greenkeeper-badge]][greenkeeper-link]
 [![semantic-release][semantic-release-badge]][semantic-release-link]
 [![PRs Welcome][PRs-badge]][PRs-link]
 [![Renovate][renovate-badge]][renovate-link]
@@ -95,10 +94,6 @@ $ npm test
 [commitizen-link]: http://commitizen.github.io/cz-cli/
 
 [commitizen-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-
-[greenkeeper-link]: https://greenkeeper.io/
-
-[greenkeeper-badge]: https://badges.greenkeeper.io/form8ion/shuttle.svg
 
 [semantic-release-link]: https://github.com/semantic-release/semantic-release
 
