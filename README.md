@@ -77,7 +77,7 @@ $ npm test
 
 [npm-link]: https://www.npmjs.com/package/@form8ion/shuttle
 
-[npm-badge]: https://img.shields.io/npm/v/@form8ion/shuttle.svg
+[npm-badge]: https://img.shields.io/npm/v/@form8ion/shuttle?logo=npm
 
 [runkit-link]: https://npm.runkit.com/@form8ion/shuttle
 
