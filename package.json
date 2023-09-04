@@ -35,7 +35,8 @@
     "test:integration:debug": "DEBUG=test run-s test:integration",
     "test:integration:wip": "run-s 'test:integration:base -- --profile wip'",
     "test:integration:focus": "run-s 'test:integration:base -- --profile focus'",
-    "lint:publish": "publint --strict"
+    "lint:publish": "publint --strict",
+    "prepare": "husky install"
   },
   "files": [
     "lib/"
