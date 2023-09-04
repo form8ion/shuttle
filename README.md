@@ -6,6 +6,7 @@ A utility for moving a repository from one account to another :minibus:
 
 [![Codecov][coverage-badge]][coverage-link]
 ![SLSA Level 2][slsa-badge]
+[![Node CI Workflow Status][github-actions-ci-badge]][github-actions-ci-link]
 
 <!--status-badges end -->
 
@@ -112,3 +113,7 @@ $ npm test
 [renovate-link]: https://renovatebot.com
 
 [renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovatebot
+
+[github-actions-ci-link]: https://github.com/form8ion/shuttle/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
+
+[github-actions-ci-badge]: https://img.shields.io/github/actions/workflow/status/form8ion/shuttle/node-ci.yml.svg?branch=master&logo=github
