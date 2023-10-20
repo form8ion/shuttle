@@ -14,7 +14,6 @@ function assertTitleIsIncluded(readmeTree, projectName) {
   assert.equal(titleText.value, projectName);
 }
 
-
 Then('the readme title is updated to {string}', async function (updatedProjectName) {
   const readmeTree = parse(await fs.readFile(`${process.cwd()}/README.md`, 'utf8'));
 
