@@ -68,7 +68,7 @@
     "husky": "9.0.11",
     "jest-when": "3.6.0",
     "lockfile-lint": "4.13.2",
-    "mdast-util-from-markdown": "2.0.0",
+    "mdast-util-from-markdown": "2.0.1",
     "mock-fs": "5.2.0",
     "npm-run-all2": "6.2.0",
     "publint": "0.2.8",
